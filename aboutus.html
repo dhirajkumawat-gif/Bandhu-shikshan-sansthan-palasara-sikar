@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - School Website</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        /* Section Container */
+        .welcome-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Two Column Layout */
+        .welcome-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        /* Responsive Layout for Mobile */
+        @media (max-width: 768px) {
+            .welcome-grid { 
+                grid-template-columns: 1fr; 
+            }
+        }
+
+        /* Left Side Text Styles */
+        .welcome-text h2 {
+            font-size: 2.2rem;
+            color: #0c2461; /* Professional School Blue */
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .experience-badge {
+            background-color: #e67e22; /* Highlight Orange */
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 4px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .welcome-text p {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        /* Right Side Image Styles */
+        .welcome-image img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="welcome-section">
+        <div class="welcome-grid">
+            
+            <!-- Left Column: Text Content -->
+            <div class="welcome-text">
+                <div class="experience-badge">🏆 22+ Years of Educational Excellence</div>
+                <h2>Welcome to Our School</h2>
+                <p>Shiksha ke kshetra me 22 saal se bhi adhik ke anubhav ke sath, hamara school bacho ko behtareen shiksha aur sanskar dene ke liye pratibadh hai. Hum sirf padhai par hi nahi, balki bacho ke mansik aur sharirik vikas par bhi poora dhyan dete hain.</p>
+                <p>In pichle 22 saalon me humne hazaron vidyarthiyon ke bhavishya ko nikaara hai. Yahan ka mahool shant aur safe hai, jahan experienced teachers har ek bacche par vyaktigat (personal) dhyan dete hain taaki woh har kshetra me hamesha aage badhein.</p>
+            </div>
+
+            <!-- Right Column: Kids/Students Image -->
+            <div class="welcome-image">
+                <!-- Yahan school ke bacho ki photo ka link/path aayega -->
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="School Students">
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
