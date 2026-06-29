@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Gallery</title>
+<body background="da9de6969223b046ec48e7da5529cb2a.jpg">
+    <style>
+
+body {
+background-repeat: no repeat;
+background-size: cover;
+background-attachment: fixed;}
+
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 40px 20px;
+        }
+
+        /* Gallery Section Container */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #0c2461; /* Professional School Blue */
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .gallery-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        /* Grid Layout */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* Gallery Card Styles - Animations Removed */
+        .gallery-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image Wrapper - Zoom Effects Removed */
+        .image-box {
+            position: relative;
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            background-color: #e0e0e0;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Text Content Styles */
+        .card-info {
+            padding: 20px;
+            text-align: center;
+            border-top: 4px solid #0c2461; /* Category identifier line */
+        }
+
+        .card-info.dance { border-top-color: #e67e22; } /* Orange for Dance */
+        .card-info.teaching { border-top-color: #2bc4ad; } /* Teal for Learning */
+        .card-info.sports { border-top-color: #27ae60; } /* Green for Sports */
+
+        .card-title {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .card-desc {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1 class="gallery-title">Our School Activities</h1>
+        <p class="gallery-subtitle">Glimpses of talent, learning, and sportsmanship in our campus</p>
+
+        <div class="gallery-grid">
+            
+            <!-- 1. Dance Program Card -->
+            <div class="gallery-card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="Dance Program">
+                </div>
+                <div class="card-info dance">
+                    <h3 class="card-title">Dance Program</h3>
+                    <p class="card-desc">Annual cultural dance fest and traditional performances by students.</p>
+                </div>
+            </div>
+
+            <!-- 2. Teaching Learning Card -->
+            <div class="gallery-card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=600&q=80" alt="Teaching Learning">
+                </div>
+                <div class="card-info teaching">
+                    <h3 class="card-title">Teaching Learning</h3>
+                    <p class="card-desc">Interactive smart classrooms and practical learning environment.</p>
+                </div>
+            </div>
+
+            <!-- 3. Sports Card -->
+            <div class="gallery-card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=600&q=80" alt="Sports Activities">
+                </div>
+                <div class="card-info sports">
+                    <h3 class="card-title">Sports & Games</h3>
+                    <p class="card-desc">Annual sports meet, teamwork, and various outdoor achievements.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

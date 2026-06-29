@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-image: url("da9de6969223b046ec48e7da5529cb2a.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            background-color: pink;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        td {
+            padding: 10px;
+        }
+table {
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Student Registration Form</h1>
+    <form
+  action="https://formspree.io/f/meebzazv"
+  method="POST"
+>
+        <table>
+            <tr><td>Student Name:</td><td><input type="text" name="fname"></td></tr>
+            <tr><td>Father's Name:</td><td><input type="text" name="fathername"></td></tr>
+            <tr><td>Mother's Name:</td><td><input type="text" name="mname"></td></tr>
+            <tr><td>Date of Birth:</td><td><input type="date" name="dob"></td></tr>
+            <tr><td>Email:</td><td><input type="email" name="email"></td></tr>
+            <tr><td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr><td>Class:</td>
+                <td>
+                    <select name="class">
+                        <option value="">---Select Class---</option>
+                        <option value="1">Class 1</option>
+                        <option value="2">Class 2</option>
+                        <option value="3">Class 3</option>
+                        <option value="4">Class 4</option>
+                        <option value="5">Class 5</option>
+                        <option value="6">Class 6</option>
+                        <option value="7">Class 7</option>
+                        <option value="8">Class 8</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td>Address:</td><td><textarea name="address"></textarea></td></tr>
+            <tr><td colspan="2" style="text-align:center;"><input type="submit" value="Submit"></td></tr>
+        </table>
+    </form>
+</body>
+</html>

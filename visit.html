@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Facilities</title>
+    <style>
+<body background="da9de6969223b046ec48e7da5529cb2a.jpg">
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+        }
+
+        .facilities-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .facilities-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #0c2461;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        /* 3 Column Layout */
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Card Styles - Blue line removed and Shadow added */
+        .facility-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Sunder aur soft shadow */
+            text-align: center;
+        }
+
+        /* Icon placeholder styling */
+        .facility-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .facility-card h3 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+
+        .facility-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="facilities-section">
+        <h2 class="facilities-title">Our Campus Facilities</h2>
+
+        <div class="facilities-grid">
+
+            <!-- Facility 1 -->
+            <div class="facility-card">
+                <div class="facility-icon">💻</div>
+                <h3>Smart Labs & Classes</h3>
+                <p>Bacho ko modern tareeqe se padhane ke liye hamare paas smart classrooms aur fully equipped computer lab ki suvidha hai.</p>
+            </div>
+
+            <!-- Facility 2 -->
+            <div class="facility-card">
+                <div class="facility-icon">📚</div>
+                <h3>Rich Library</h3>
+                <p>Hamari library me bacho ke gyan ko badhane ke liye dheron kahaniyon, vigyan aur syllabus se judi kitabein maujood hain.</p>
+            </div>
+
+            <!-- Facility 3 -->
+            <div class="facility-card">
+                <div class="facility-icon">⚽</div>
+                <h3>Big Playground</h3>
+                <p>Bacho ke sharirik vikas aur khel-kood ke liye school me ek bada aur safe playground hai jahan alag-alag sports sikhaye jaate hain.</p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
